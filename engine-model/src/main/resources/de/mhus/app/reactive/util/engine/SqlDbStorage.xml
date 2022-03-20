@@ -1,0 +1,125 @@
+<!--
+
+    Copyright (C) 2018 Mike Hummel (mh@mhus.de)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<config>
+	<table name="$/prefix$_case" primary_key="id">
+	  <field name="id" type="string" size="36" />
+	  <field name="content" type="blob" />
+	  <field name="uri" type="string" size="700" />
+	  <field name="state" type="int" />
+	  <field name="milestone" type="string" size="200" />
+	  <field name="created" type="DATETIME" />
+	  <field name="modified" type="DATETIME" />
+	  <field name="closed_message" type="string" size="400" />
+	  <field name="closed_code" type="int"/>
+	  <field name="name" type="string" size="700" />
+	  <field name="custom" type="string" size="700" />
+	  <field name="customer" type="string" size="700" />
+	  <field name="process" type="string" size="300" />
+	  <field name="version" type="string" size="100" />
+	  <field name="pool" type="string" size="300" />
+	  <field name="priority" type="int" />
+	  <field name="score" type="int" />
+	  <field name="index0" type="string" size="300" />
+	  <field name="index1" type="string" size="300" />
+	  <field name="index2" type="string" size="300" />
+	  <field name="index3" type="string" size="300" />
+	  <field name="index4" type="string" size="300" />
+	  <field name="index5" type="string" size="300" />
+	  <field name="index6" type="string" size="300" />
+	  <field name="index7" type="string" size="300" />
+	  <field name="index8" type="string" size="300" />
+	  <field name="index9" type="string" size="300" />
+	</table>
+	<index name="$/prefix$_case_st" table="$/prefix$_case" fields="state" unique="false" />
+    <index name="$/prefix$_case_c1" table="$/prefix$_case" fields="custom" unique="false" />
+    <index name="$/prefix$_case_c2" table="$/prefix$_case" fields="customer" unique="false" />
+    <index name="$/prefix$_case_i0" table="$/prefix$_case" fields="index0" unique="false" />
+    <index name="$/prefix$_case_i1" table="$/prefix$_case" fields="index1" unique="false" />
+    <index name="$/prefix$_case_i2" table="$/prefix$_case" fields="index2" unique="false" />
+    <index name="$/prefix$_case_i3" table="$/prefix$_case" fields="index3" unique="false" />
+    <index name="$/prefix$_case_i4" table="$/prefix$_case" fields="index4" unique="false" />
+    <index name="$/prefix$_case_i5" table="$/prefix$_case" fields="index5" unique="false" />
+    <index name="$/prefix$_case_i6" table="$/prefix$_case" fields="index6" unique="false" />
+    <index name="$/prefix$_case_i7" table="$/prefix$_case" fields="index7" unique="false" />
+    <index name="$/prefix$_case_i8" table="$/prefix$_case" fields="index8" unique="false" />
+    <index name="$/prefix$_case_i9" table="$/prefix$_case" fields="index9" unique="false" />
+	
+	<table name="$/prefix$_node" primary_key="id">
+	  <field name="id" type="string" size="36" />
+	  <field name="case" type="string" size="36" />
+	  <field name="content" type="blob" />
+	  <field name="message" type="string" size="700" />
+	  <field name="signal" type="string" size="700" />
+	  <field name="assigned" type="string" size="200" />
+	  <field name="name" type="string" size="700" />
+	  <field name="state" type="int" />
+	  <field name="type" type="int" />
+	  <field name="scheduled" type="long" />
+	  <field name="created" type="DATETIME" />
+	  <field name="modified" type="DATETIME" />
+	  <field name="custom" type="string" size="700" />
+	  <field name="customer" type="string" size="700" />
+	  <field name="uri" type="string" size="700" />
+	  <field name="process" type="string" size="300" />
+	  <field name="version" type="string" size="100" />
+	  <field name="pool" type="string" size="300" />
+	  <field name="priority" type="int" />
+	  <field name="score" type="int" />
+	  <field name="index0" type="string" size="300" />
+	  <field name="index1" type="string" size="300" />
+	  <field name="index2" type="string" size="300" />
+	  <field name="index3" type="string" size="300" />
+	  <field name="index4" type="string" size="300" />
+	  <field name="index5" type="string" size="300" />
+	  <field name="index6" type="string" size="300" />
+	  <field name="index7" type="string" size="300" />
+	  <field name="index8" type="string" size="300" />
+	  <field name="index9" type="string" size="300" />
+	  <field name="actor" type="string" size="100" />
+      <field name="due" type="DATETIME" />
+	</table>
+	<table name="$/prefix$_lock" primary_key="id">
+      <field name="id" type="string" size="300" />
+	</table>
+    <index name="$/prefix$_node_ss" table="$/prefix$_node" fields="state,scheduled" unique="false" />
+    <index name="$/prefix$_node_ssm" table="$/prefix$_node" fields="state,scheduled,modified" unique="false" />
+    <index name="$/prefix$_node_pm" table="$/prefix$_node" fields="priority,modified" unique="false" />
+    <index name="$/prefix$_node_st" table="$/prefix$_node" fields="state" unique="false" />
+    <index name="$/prefix$_node_ca" table="$/prefix$_node" fields="case" unique="false" />
+    <index name="$/prefix$_node_c1" table="$/prefix$_node" fields="custom" unique="false" />
+    <index name="$/prefix$_node_c2" table="$/prefix$_node" fields="customer" unique="false" />
+    <index name="$/prefix$_node_ac" table="$/prefix$_node" fields="actor" unique="false" />
+    <index name="$/prefix$_node_i0" table="$/prefix$_node" fields="index0" unique="false" />
+    <index name="$/prefix$_node_i1" table="$/prefix$_node" fields="index1" unique="false" />
+    <index name="$/prefix$_node_i2" table="$/prefix$_node" fields="index2" unique="false" />
+    <index name="$/prefix$_node_i3" table="$/prefix$_node" fields="index3" unique="false" />
+    <index name="$/prefix$_node_i4" table="$/prefix$_node" fields="index4" unique="false" />
+    <index name="$/prefix$_node_i5" table="$/prefix$_node" fields="index5" unique="false" />
+    <index name="$/prefix$_node_i6" table="$/prefix$_node" fields="index6" unique="false" />
+    <index name="$/prefix$_node_i7" table="$/prefix$_node" fields="index7" unique="false" />
+    <index name="$/prefix$_node_i8" table="$/prefix$_node" fields="index8" unique="false" />
+    <index name="$/prefix$_node_i9" table="$/prefix$_node" fields="index9" unique="false" />
+    
+	<table name="$/prefix$_engine" primary_key="id">
+	  <field name="id" type="string" size="300" />
+	  <field name="content" type="string" size="300" />
+	  <field name="created" type="DATETIME" />
+	  <field name="modified" type="DATETIME" />
+	</table>
+	
+</config>

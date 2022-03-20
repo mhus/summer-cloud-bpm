@@ -14,5 +14,6 @@
   	<module>engine-model</module>
   	<module>engine-core</module>
   	<module>client-model</module>
+  	<module>common-test</module>
   </modules>
 </project>
