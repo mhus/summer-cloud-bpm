@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+	  <groupId>org.summerclouds.common</groupId>
+	  <artifactId>common-parent</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>org.summerclouds.bpm</groupId>
+  <artifactId>summer-cloud-bpm</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <modules>
+  	<module>engine-model</module>
+  	<module>engine-core</module>
+  	<module>client-model</module>
+  </modules>
+</project>
