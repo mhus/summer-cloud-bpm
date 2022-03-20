@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?><config>
+<!--
+
+    Copyright (C) 2018 Mike Hummel (mh@mhus.de)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<step nr="1">
+<cases>
+<de.mhus.app.reactive.examples.simple1.S1Pool canonical="de.mhus.app.reactive.examples.simple1.S1Pool" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+<parameters text1="parallel1" text2=""/>
+</de.mhus.app.reactive.examples.simple1.S1Pool>
+</cases>
+<nodes>
+<de.mhus.app.reactive.model.engine.RuntimeNode assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+<parameters msg.0="start:d228bd22-527f-4c38-a827-15cd0818374f,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="flow:d228bd22-527f-4c38-a827-15cd0818374f,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@424e1977]" msg.2="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,initStop,"/>
+</de.mhus.app.reactive.model.engine.RuntimeNode>
+<de.mhus.app.reactive.examples.simple1.S1Start1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" name="S1Start1" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1Start1>
+</nodes>
+</step>
+<step nr="2">
+<cases>
+<de.mhus.app.reactive.examples.simple1.S1Pool canonical="de.mhus.app.reactive.examples.simple1.S1Pool" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+<parameters text1="parallel1" text2=""/>
+</de.mhus.app.reactive.examples.simple1.S1Pool>
+</cases>
+<nodes>
+<de.mhus.app.reactive.examples.simple1.S1StepMain assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" name="S1StepMain" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1StepMain>
+<de.mhus.app.reactive.model.engine.RuntimeNode assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+<parameters msg.0="start:d228bd22-527f-4c38-a827-15cd0818374f,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="flow:d228bd22-527f-4c38-a827-15cd0818374f,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@424e1977]" msg.2="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,initStop," msg.3="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@11fc564b]" msg.4="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.5="connect:d228bd22-527f-4c38-a827-15cd0818374f,a42e753f-2b79-45e4-8d15-f26c95c962f6" msg.6="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@7c83dc97]" msg.7="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,initStop," msg.8="flow:d228bd22-527f-4c38-a827-15cd0818374f,CLOSED,executeStop,"/>
+</de.mhus.app.reactive.model.engine.RuntimeNode>
+<de.mhus.app.reactive.examples.simple1.S1Start1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1Start1>
+</nodes>
+</step>
+<step nr="3">
+<cases>
+<de.mhus.app.reactive.examples.simple1.S1Pool canonical="de.mhus.app.reactive.examples.simple1.S1Pool" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+<parameters text1="parallel1" text2=""/>
+</de.mhus.app.reactive.examples.simple1.S1Pool>
+</cases>
+<nodes>
+<de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1" name="S1GatewayParallel1" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1>
+<de.mhus.app.reactive.examples.simple1.S1StepMain assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" name="S1StepMain" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1StepMain>
+<de.mhus.app.reactive.model.engine.RuntimeNode assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+<parameters msg.0="start:d228bd22-527f-4c38-a827-15cd0818374f,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="flow:d228bd22-527f-4c38-a827-15cd0818374f,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@424e1977]" msg.10="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1" msg.11="connect:a42e753f-2b79-45e4-8d15-f26c95c962f6,4344a11d-2ad5-4566-988b-80a519d1e8dd" msg.12="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1][de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1@f381794]" msg.13="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,RUNNING,initStop," msg.14="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,CLOSED,executeStop," msg.2="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,initStop," msg.3="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@11fc564b]" msg.4="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.5="connect:d228bd22-527f-4c38-a827-15cd0818374f,a42e753f-2b79-45e4-8d15-f26c95c962f6" msg.6="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@7c83dc97]" msg.7="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,initStop," msg.8="flow:d228bd22-527f-4c38-a827-15cd0818374f,CLOSED,executeStop," msg.9="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@6497b078]"/>
+</de.mhus.app.reactive.model.engine.RuntimeNode>
+<de.mhus.app.reactive.examples.simple1.S1Start1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1Start1>
+</nodes>
+</step>
+<step nr="4">
+<cases>
+<de.mhus.app.reactive.examples.simple1.S1Pool canonical="de.mhus.app.reactive.examples.simple1.S1Pool" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+<parameters text1="parallel1" text2=""/>
+</de.mhus.app.reactive.examples.simple1.S1Pool>
+</cases>
+<nodes>
+<de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1" name="S1Parallel1Way1" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1>
+<de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2" name="S1Parallel1Way2" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2>
+<de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1" name="S1GatewayParallel1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1>
+<de.mhus.app.reactive.examples.simple1.S1StepMain assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" name="S1StepMain" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1StepMain>
+<de.mhus.app.reactive.model.engine.RuntimeNode assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+<parameters msg.0="start:d228bd22-527f-4c38-a827-15cd0818374f,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="flow:d228bd22-527f-4c38-a827-15cd0818374f,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@424e1977]" msg.10="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1" msg.11="connect:a42e753f-2b79-45e4-8d15-f26c95c962f6,4344a11d-2ad5-4566-988b-80a519d1e8dd" msg.12="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1][de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1@f381794]" msg.13="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,RUNNING,initStop," msg.14="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,CLOSED,executeStop," msg.15="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1][de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1@51f116b8]" msg.16="flow:012539f2-575e-4976-9db8-82405a1300b6,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1" msg.17="connect:4344a11d-2ad5-4566-988b-80a519d1e8dd,012539f2-575e-4976-9db8-82405a1300b6" msg.18="flow:012539f2-575e-4976-9db8-82405a1300b6,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1@6b8ca3c8]" msg.19="flow:012539f2-575e-4976-9db8-82405a1300b6,RUNNING,initStop," msg.2="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,initStop," msg.20="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2" msg.21="connect:4344a11d-2ad5-4566-988b-80a519d1e8dd,05c3838c-768a-4c7c-8439-3fd4d141bc0b" msg.22="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2@4e7912d8]" msg.23="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,RUNNING,initStop," msg.24="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,CLOSED,executeStop," msg.3="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@11fc564b]" msg.4="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.5="connect:d228bd22-527f-4c38-a827-15cd0818374f,a42e753f-2b79-45e4-8d15-f26c95c962f6" msg.6="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@7c83dc97]" msg.7="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,initStop," msg.8="flow:d228bd22-527f-4c38-a827-15cd0818374f,CLOSED,executeStop," msg.9="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@6497b078]"/>
+</de.mhus.app.reactive.model.engine.RuntimeNode>
+<de.mhus.app.reactive.examples.simple1.S1Start1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1Start1>
+</nodes>
+</step>
+<step nr="5">
+<cases>
+<de.mhus.app.reactive.examples.simple1.S1Pool canonical="de.mhus.app.reactive.examples.simple1.S1Pool" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+<parameters text1="parallel1" text2=""/>
+</de.mhus.app.reactive.examples.simple1.S1Pool>
+</cases>
+<nodes>
+<de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1" name="S1Parallel1Way1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1>
+<de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2" name="S1Parallel1Way2" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2>
+<de.mhus.app.reactive.examples.simple1.S1TheEnd assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1TheEnd" name="S1TheEnd" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1TheEnd>
+<de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1" name="S1GatewayParallel1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1>
+<de.mhus.app.reactive.examples.simple1.S1TheEnd assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1TheEnd" name="S1TheEnd" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1TheEnd>
+<de.mhus.app.reactive.examples.simple1.S1StepMain assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" name="S1StepMain" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1StepMain>
+<de.mhus.app.reactive.model.engine.RuntimeNode assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+<parameters msg.0="start:d228bd22-527f-4c38-a827-15cd0818374f,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="flow:d228bd22-527f-4c38-a827-15cd0818374f,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@424e1977]" msg.10="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1" msg.11="connect:a42e753f-2b79-45e4-8d15-f26c95c962f6,4344a11d-2ad5-4566-988b-80a519d1e8dd" msg.12="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1][de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1@f381794]" msg.13="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,RUNNING,initStop," msg.14="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,CLOSED,executeStop," msg.15="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1][de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1@51f116b8]" msg.16="flow:012539f2-575e-4976-9db8-82405a1300b6,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1" msg.17="connect:4344a11d-2ad5-4566-988b-80a519d1e8dd,012539f2-575e-4976-9db8-82405a1300b6" msg.18="flow:012539f2-575e-4976-9db8-82405a1300b6,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1@6b8ca3c8]" msg.19="flow:012539f2-575e-4976-9db8-82405a1300b6,RUNNING,initStop," msg.2="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,initStop," msg.20="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2" msg.21="connect:4344a11d-2ad5-4566-988b-80a519d1e8dd,05c3838c-768a-4c7c-8439-3fd4d141bc0b" msg.22="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2@4e7912d8]" msg.23="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,RUNNING,initStop," msg.24="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,CLOSED,executeStop," msg.25="flow:012539f2-575e-4976-9db8-82405a1300b6,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1@6a84a97d]" msg.26="flow:355b5342-69f4-452e-9cd6-9eac92d87abe,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1TheEnd" msg.27="connect:012539f2-575e-4976-9db8-82405a1300b6,355b5342-69f4-452e-9cd6-9eac92d87abe" msg.28="flow:355b5342-69f4-452e-9cd6-9eac92d87abe,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1TheEnd][de.mhus.app.reactive.examples.simple1.S1TheEnd@212b5695]" msg.29="flow:355b5342-69f4-452e-9cd6-9eac92d87abe,RUNNING,initStop," msg.3="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@11fc564b]" msg.30="flow:012539f2-575e-4976-9db8-82405a1300b6,CLOSED,executeStop," msg.31="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2@6f46426d]" msg.32="flow:85a44ee8-9f32-4c52-ba77-68310ac29ca3,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1TheEnd" msg.33="connect:05c3838c-768a-4c7c-8439-3fd4d141bc0b,85a44ee8-9f32-4c52-ba77-68310ac29ca3" msg.34="flow:85a44ee8-9f32-4c52-ba77-68310ac29ca3,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1TheEnd][de.mhus.app.reactive.examples.simple1.S1TheEnd@32b260fa]" msg.35="flow:85a44ee8-9f32-4c52-ba77-68310ac29ca3,RUNNING,initStop," msg.36="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,CLOSED,executeStop," msg.4="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.5="connect:d228bd22-527f-4c38-a827-15cd0818374f,a42e753f-2b79-45e4-8d15-f26c95c962f6" msg.6="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@7c83dc97]" msg.7="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,initStop," msg.8="flow:d228bd22-527f-4c38-a827-15cd0818374f,CLOSED,executeStop," msg.9="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@6497b078]"/>
+</de.mhus.app.reactive.model.engine.RuntimeNode>
+<de.mhus.app.reactive.examples.simple1.S1Start1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1Start1>
+</nodes>
+</step>
+<step nr="6">
+<cases>
+<de.mhus.app.reactive.examples.simple1.S1Pool canonical="de.mhus.app.reactive.examples.simple1.S1Pool" name="S1Pool" scheduled="0" state="CLOSED" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+<parameters text1="parallel1" text2=""/>
+</de.mhus.app.reactive.examples.simple1.S1Pool>
+</cases>
+<nodes>
+<de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1" name="S1Parallel1Way1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1>
+<de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2" name="S1Parallel1Way2" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2>
+<de.mhus.app.reactive.examples.simple1.S1TheEnd assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1TheEnd" name="S1TheEnd" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1TheEnd>
+<de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1" name="S1GatewayParallel1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1>
+<de.mhus.app.reactive.examples.simple1.S1TheEnd assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1TheEnd" name="S1TheEnd" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1TheEnd>
+<de.mhus.app.reactive.examples.simple1.S1StepMain assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" name="S1StepMain" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1StepMain>
+<de.mhus.app.reactive.model.engine.RuntimeNode assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" name="runtime" state="CLOSED" suspended="CLOSED" tryCount="0" type="RUNTIME">
+<parameters msg.0="start:d228bd22-527f-4c38-a827-15cd0818374f,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="flow:d228bd22-527f-4c38-a827-15cd0818374f,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@424e1977]" msg.10="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1" msg.11="connect:a42e753f-2b79-45e4-8d15-f26c95c962f6,4344a11d-2ad5-4566-988b-80a519d1e8dd" msg.12="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1][de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1@f381794]" msg.13="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,RUNNING,initStop," msg.14="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,CLOSED,executeStop," msg.15="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1][de.mhus.app.reactive.examples.simple1.parallel.S1GatewayParallel1@51f116b8]" msg.16="flow:012539f2-575e-4976-9db8-82405a1300b6,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1" msg.17="connect:4344a11d-2ad5-4566-988b-80a519d1e8dd,012539f2-575e-4976-9db8-82405a1300b6" msg.18="flow:012539f2-575e-4976-9db8-82405a1300b6,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1@6b8ca3c8]" msg.19="flow:012539f2-575e-4976-9db8-82405a1300b6,RUNNING,initStop," msg.2="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,initStop," msg.20="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,NEW,createActivity,de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2" msg.21="connect:4344a11d-2ad5-4566-988b-80a519d1e8dd,05c3838c-768a-4c7c-8439-3fd4d141bc0b" msg.22="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,NEW,initStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2@4e7912d8]" msg.23="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,RUNNING,initStop," msg.24="flow:4344a11d-2ad5-4566-988b-80a519d1e8dd,CLOSED,executeStop," msg.25="flow:012539f2-575e-4976-9db8-82405a1300b6,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way1@6a84a97d]" msg.26="flow:355b5342-69f4-452e-9cd6-9eac92d87abe,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1TheEnd" msg.27="connect:012539f2-575e-4976-9db8-82405a1300b6,355b5342-69f4-452e-9cd6-9eac92d87abe" msg.28="flow:355b5342-69f4-452e-9cd6-9eac92d87abe,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1TheEnd][de.mhus.app.reactive.examples.simple1.S1TheEnd@212b5695]" msg.29="flow:355b5342-69f4-452e-9cd6-9eac92d87abe,RUNNING,initStop," msg.3="flow:d228bd22-527f-4c38-a827-15cd0818374f,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@11fc564b]" msg.30="flow:012539f2-575e-4976-9db8-82405a1300b6,CLOSED,executeStop," msg.31="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2][de.mhus.app.reactive.examples.simple1.parallel.S1Parallel1Way2@6f46426d]" msg.32="flow:85a44ee8-9f32-4c52-ba77-68310ac29ca3,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1TheEnd" msg.33="connect:05c3838c-768a-4c7c-8439-3fd4d141bc0b,85a44ee8-9f32-4c52-ba77-68310ac29ca3" msg.34="flow:85a44ee8-9f32-4c52-ba77-68310ac29ca3,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1TheEnd][de.mhus.app.reactive.examples.simple1.S1TheEnd@32b260fa]" msg.35="flow:85a44ee8-9f32-4c52-ba77-68310ac29ca3,RUNNING,initStop," msg.36="flow:05c3838c-768a-4c7c-8439-3fd4d141bc0b,CLOSED,executeStop," msg.37="flow:355b5342-69f4-452e-9cd6-9eac92d87abe,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1TheEnd][de.mhus.app.reactive.examples.simple1.S1TheEnd@47987356]" msg.38="flow:355b5342-69f4-452e-9cd6-9eac92d87abe,CLOSED,executeStop," msg.39="flow:85a44ee8-9f32-4c52-ba77-68310ac29ca3,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1TheEnd][de.mhus.app.reactive.examples.simple1.S1TheEnd@66d3eec0]" msg.4="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.40="flow:85a44ee8-9f32-4c52-ba77-68310ac29ca3,CLOSED,executeStop," msg.5="connect:d228bd22-527f-4c38-a827-15cd0818374f,a42e753f-2b79-45e4-8d15-f26c95c962f6" msg.6="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@7c83dc97]" msg.7="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,initStop," msg.8="flow:d228bd22-527f-4c38-a827-15cd0818374f,CLOSED,executeStop," msg.9="flow:a42e753f-2b79-45e4-8d15-f26c95c962f6,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@6497b078]"/>
+</de.mhus.app.reactive.model.engine.RuntimeNode>
+<de.mhus.app.reactive.examples.simple1.S1Start1 assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+<parameters/>
+</de.mhus.app.reactive.examples.simple1.S1Start1>
+</nodes>
+</step>
+</config>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+
+    Copyright (C) 2018 Mike Hummel (mh@mhus.de)
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+            http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+-->
+<inode xmlns:node="http://www.mhus.de/schemas/node.html">
+    <step node:type="array" nr="1">
+        <cases canonical="de.mhus.app.reactive.examples.simple1.S1Pool" node:type="array" milestone="NEW" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+            <parameters node:type="object" text1="exclusive" text2="kirk"/>
+        </cases>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" node:type="array" name="S1Start1" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="" assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" node:type="array" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+            <parameters node:type="object" msg.0="1586899754986,Helena.fritz.box-K6G77FCF4L57|start:649fb3ea-0965-4cae-82bc-5839c6953bdc,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="1586899754987,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@31f5ffb9]" msg.2="1586899754988,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,initStop,"/>
+        </nodes>
+    </step>
+    <step node:type="array" nr="2">
+        <cases canonical="de.mhus.app.reactive.examples.simple1.S1Pool" node:type="array" milestone="NEW" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+            <parameters node:type="object" text1="exclusive" text2="kirk"/>
+        </cases>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" node:type="array" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" node:type="array" name="S1StepMain" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="" assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" node:type="array" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+            <parameters node:type="object" msg.0="1586899754986,Helena.fritz.box-K6G77FCF4L57|start:649fb3ea-0965-4cae-82bc-5839c6953bdc,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="1586899754987,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@31f5ffb9]" msg.2="1586899754988,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,initStop," msg.3="1586899755002,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@263e512e]" msg.4="1586899755003,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.5="1586899755003,Helena.fritz.box-K6G77FCF4L57|connect:649fb3ea-0965-4cae-82bc-5839c6953bdc,8afdfdd5-e629-4d6a-82b9-4b79ad73c29b" msg.6="1586899755003,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@16732340]" msg.7="1586899755005,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,RUNNING,initStop," msg.8="1586899755005,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,CLOSED,executeStop,"/>
+        </nodes>
+    </step>
+    <step node:type="array" nr="3">
+        <cases canonical="de.mhus.app.reactive.examples.simple1.S1Pool" node:type="array" milestone="NEW" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+            <parameters node:type="object" text1="exclusive" text2="kirk"/>
+        </cases>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" node:type="array" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" node:type="array" name="S1StepMain" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.model.util.EverybodyActor" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive" node:type="array" name="S1GatewayExclusive" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="" assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" node:type="array" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+            <parameters node:type="object" msg.0="1586899754986,Helena.fritz.box-K6G77FCF4L57|start:649fb3ea-0965-4cae-82bc-5839c6953bdc,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="1586899754987,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@31f5ffb9]" msg.10="1586899755126,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,NEW,createActivity,de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive" msg.11="1586899755126,Helena.fritz.box-K6G77FCF4L57|connect:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,93d3ba75-2b8d-4098-ae98-78eb7af7c86c" msg.12="1586899755127,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,NEW,initStart,[de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive][de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive@10ae002e]" msg.13="1586899755128,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,RUNNING,initStop," msg.14="1586899755129,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,CLOSED,executeStop," msg.2="1586899754988,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,initStop," msg.3="1586899755002,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@263e512e]" msg.4="1586899755003,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.5="1586899755003,Helena.fritz.box-K6G77FCF4L57|connect:649fb3ea-0965-4cae-82bc-5839c6953bdc,8afdfdd5-e629-4d6a-82b9-4b79ad73c29b" msg.6="1586899755003,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@16732340]" msg.7="1586899755005,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,RUNNING,initStop," msg.8="1586899755005,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,CLOSED,executeStop," msg.9="1586899755125,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@440d2d64]"/>
+        </nodes>
+    </step>
+    <step node:type="array" nr="4">
+        <cases canonical="de.mhus.app.reactive.examples.simple1.S1Pool" node:type="array" milestone="NEW" name="S1Pool" scheduled="0" state="RUNNING" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+            <parameters node:type="object" text1="exclusive" text2="kirk"/>
+        </cases>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Terminate2" node:type="array" name="S1Terminate2" state="RUNNING" suspended="RUNNING" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" node:type="array" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" node:type="array" name="S1StepMain" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.model.util.EverybodyActor" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive" node:type="array" name="S1GatewayExclusive" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="" assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" node:type="array" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+            <parameters node:type="object" msg.0="1586899754986,Helena.fritz.box-K6G77FCF4L57|start:649fb3ea-0965-4cae-82bc-5839c6953bdc,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="1586899754987,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@31f5ffb9]" msg.10="1586899755126,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,NEW,createActivity,de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive" msg.11="1586899755126,Helena.fritz.box-K6G77FCF4L57|connect:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,93d3ba75-2b8d-4098-ae98-78eb7af7c86c" msg.12="1586899755127,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,NEW,initStart,[de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive][de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive@10ae002e]" msg.13="1586899755128,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,RUNNING,initStop," msg.14="1586899755129,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,CLOSED,executeStop," msg.15="1586899755247,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive][de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive@2119b989]" msg.16="1586899755248,Helena.fritz.box-K6G77FCF4L57|flow:3aca0085-6f95-42e1-96c2-5af73162e6e1,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1Terminate2" msg.17="1586899755249,Helena.fritz.box-K6G77FCF4L57|connect:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,3aca0085-6f95-42e1-96c2-5af73162e6e1" msg.18="1586899755249,Helena.fritz.box-K6G77FCF4L57|flow:3aca0085-6f95-42e1-96c2-5af73162e6e1,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Terminate2][de.mhus.app.reactive.examples.simple1.S1Terminate2@77648321]" msg.19="1586899755250,Helena.fritz.box-K6G77FCF4L57|flow:3aca0085-6f95-42e1-96c2-5af73162e6e1,RUNNING,initStop," msg.2="1586899754988,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,initStop," msg.20="1586899755251,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,CLOSED,executeStop," msg.3="1586899755002,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@263e512e]" msg.4="1586899755003,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.5="1586899755003,Helena.fritz.box-K6G77FCF4L57|connect:649fb3ea-0965-4cae-82bc-5839c6953bdc,8afdfdd5-e629-4d6a-82b9-4b79ad73c29b" msg.6="1586899755003,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@16732340]" msg.7="1586899755005,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,RUNNING,initStop," msg.8="1586899755005,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,CLOSED,executeStop," msg.9="1586899755125,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@440d2d64]"/>
+        </nodes>
+    </step>
+    <step node:type="array" nr="5">
+        <cases canonical="de.mhus.app.reactive.examples.simple1.S1Pool" node:type="array" milestone="NEW" name="S1Pool" scheduled="0" state="CLOSED" uri="bpm://de.mhus.app.reactive.examples.simple1.S1Process:0.0.1/de.mhus.app.reactive.examples.simple1.S1Pool">
+            <parameters node:type="object" text1="exclusive" text2="kirk"/>
+        </cases>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Terminate2" node:type="array" name="S1Terminate2" state="RUNNING" suspended="RUNNING" tryCount="2" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1Start1" node:type="array" name="S1Start1" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.examples.simple1.S1ActorWorker" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.S1StepMain" node:type="array" name="S1StepMain" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="de.mhus.app.reactive.model.util.EverybodyActor" assigned="null" canonical="de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive" node:type="array" name="S1GatewayExclusive" state="CLOSED" suspended="CLOSED" tryCount="3" type="NODE">
+            <parameters node:type="object"/>
+        </nodes>
+        <nodes actor="" assigned="null" canonical="de.mhus.app.reactive.model.engine.RuntimeNode" node:type="array" name="runtime" state="WAITING" suspended="WAITING" tryCount="0" type="RUNTIME">
+            <parameters node:type="object" msg.0="1586899754986,Helena.fritz.box-K6G77FCF4L57|start:649fb3ea-0965-4cae-82bc-5839c6953bdc,de.mhus.app.reactive.examples.simple1.S1Start1" msg.1="1586899754987,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@31f5ffb9]" msg.10="1586899755126,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,NEW,createActivity,de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive" msg.11="1586899755126,Helena.fritz.box-K6G77FCF4L57|connect:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,93d3ba75-2b8d-4098-ae98-78eb7af7c86c" msg.12="1586899755127,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,NEW,initStart,[de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive][de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive@10ae002e]" msg.13="1586899755128,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,RUNNING,initStop," msg.14="1586899755129,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,CLOSED,executeStop," msg.15="1586899755247,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive][de.mhus.app.reactive.examples.simple1.exclusive.S1GatewayExclusive@2119b989]" msg.16="1586899755248,Helena.fritz.box-K6G77FCF4L57|flow:3aca0085-6f95-42e1-96c2-5af73162e6e1,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1Terminate2" msg.17="1586899755249,Helena.fritz.box-K6G77FCF4L57|connect:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,3aca0085-6f95-42e1-96c2-5af73162e6e1" msg.18="1586899755249,Helena.fritz.box-K6G77FCF4L57|flow:3aca0085-6f95-42e1-96c2-5af73162e6e1,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1Terminate2][de.mhus.app.reactive.examples.simple1.S1Terminate2@77648321]" msg.19="1586899755250,Helena.fritz.box-K6G77FCF4L57|flow:3aca0085-6f95-42e1-96c2-5af73162e6e1,RUNNING,initStop," msg.2="1586899754988,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,initStop," msg.20="1586899755251,Helena.fritz.box-K6G77FCF4L57|flow:93d3ba75-2b8d-4098-ae98-78eb7af7c86c,CLOSED,executeStop," msg.21="1586899755369,Helena.fritz.box-K6G77FCF4L57|flow:3aca0085-6f95-42e1-96c2-5af73162e6e1,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Terminate2][de.mhus.app.reactive.examples.simple1.S1Terminate2@7772ec28]" msg.22="1586899755371,Helena.fritz.box-K6G77FCF4L57|flow:3aca0085-6f95-42e1-96c2-5af73162e6e1,RUNNING,executeStop," msg.3="1586899755002,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1Start1][de.mhus.app.reactive.examples.simple1.S1Start1@263e512e]" msg.4="1586899755003,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,NEW,createActivity,de.mhus.app.reactive.examples.simple1.S1StepMain" msg.5="1586899755003,Helena.fritz.box-K6G77FCF4L57|connect:649fb3ea-0965-4cae-82bc-5839c6953bdc,8afdfdd5-e629-4d6a-82b9-4b79ad73c29b" msg.6="1586899755003,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,NEW,initStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@16732340]" msg.7="1586899755005,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,RUNNING,initStop," msg.8="1586899755005,Helena.fritz.box-K6G77FCF4L57|flow:649fb3ea-0965-4cae-82bc-5839c6953bdc,CLOSED,executeStop," msg.9="1586899755125,Helena.fritz.box-K6G77FCF4L57|flow:8afdfdd5-e629-4d6a-82b9-4b79ad73c29b,RUNNING,executeStart,[de.mhus.app.reactive.examples.simple1.S1StepMain][de.mhus.app.reactive.examples.simple1.S1StepMain@440d2d64]"/>
+        </nodes>
+    </step>
+</inode>
