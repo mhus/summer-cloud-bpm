@@ -96,7 +96,7 @@ public class S1CaseActionTest {
             for (INode entry : model.getArray("element")) {
                 if (cnt == 0) {
                     assertEquals("name", entry.getString("name"));
-                    assertEquals("name.title=Name", entry.getString("caption"));
+// caption was removed                    assertEquals("name.title=Name", entry.getString("caption"));
                 }
                 cnt++;
             }
