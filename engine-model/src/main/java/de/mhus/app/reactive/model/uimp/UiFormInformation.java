@@ -26,7 +26,6 @@ import org.summerclouds.common.core.form.DefRoot;
 import org.summerclouds.common.core.form.FormControl;
 import org.summerclouds.common.core.form.IFormInformation;
 import org.summerclouds.common.core.tool.MSpring;
-import org.summerclouds.common.core.tool.MSystem;
 import org.summerclouds.common.core.util.LocalClassLoader;
 
 public class UiFormInformation implements IFormInformation, Externalizable {
@@ -68,11 +67,11 @@ public class UiFormInformation implements IFormInformation, Externalizable {
         out.writeObject(form);
         if (actionHandler != null) {
             out.writeObject(actionHandler.getCanonicalName());
-            out.writeObject(MSystem.getBytes(actionHandler));
+//XXX            out.writeObject(MSystem.getBytes(actionHandler));
         } else out.writeObject(null);
         if (formControl != null) {
             out.writeObject(formControl.getCanonicalName());
-            out.writeObject(MSystem.getBytes(formControl));
+//XXX            out.writeObject(MSystem.getBytes(formControl));
         } else out.writeObject(null);
     }
 
