@@ -83,7 +83,7 @@ public class S1PropertyTest {
         console.setColor(COLOR.RED, null);
         System.out.println(
                 "========================================================================================");
-        System.out.println(MSystem.findCallingMethod(3));
+        System.out.println(MSystem.findCallerMethod(3));
         System.out.println(
                 "========================================================================================");
         console.cleanup();

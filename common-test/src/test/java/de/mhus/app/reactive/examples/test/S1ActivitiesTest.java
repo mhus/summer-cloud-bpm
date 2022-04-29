@@ -836,7 +836,7 @@ public class S1ActivitiesTest {
         console.setColor(COLOR.RED, null);
         System.out.println(
                 "========================================================================================");
-        System.out.println(MSystem.findCallingMethod(3));
+        System.out.println(MSystem.findCallerMethod(3));
         System.out.println(
                 "========================================================================================");
         console.cleanup();
@@ -912,7 +912,7 @@ public class S1ActivitiesTest {
         console.setColor(COLOR.GREEN, null);
         System.out.println(
                 "------------------------------------------------------------------------");
-        System.out.println(MSystem.findCallingMethod(3) + " Step " + i);
+        System.out.println(MSystem.findCallerMethod(3) + " Step " + i);
         System.out.println(
                 "------------------------------------------------------------------------");
         console.cleanup();
